@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+ 	<!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="/materialize/css/materialize.min.css"  media="screen,projection"/>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    
+	<meta charset="UTF-8"/>
+	<title>Produto</title>
+</head>
+
+<body>
+	<div class="container">
+	<header>
+		<nav>
+		    <div class="nav-wrapper">
+		      <a href="#" class="brand-logo left">Cadastro de Produto</a>
+		      <ul id="nav-mobile" class="right hide-on-med-and-down">
+		        <li><a href="/produtosAdm" class="waves-effect waves-light btn"><i class="material-icons left">list</i>Lista de Produtos</a></li>
+		      </ul>
+		    </div>
+	  </nav>
+	</header>
+	
+	<form method="post">
+			<div class=row>
+				<div class="input-field col s6">
+				Nome: <input type="text" value="" name="nome"/>			
+				</div>
+				<div class="input-field col s6">
+				Descrição: <input type="text" value="" name="descricao"/>
+				Valor: <input type="text" value="" name="valor"/>
+				</div>
+			</div>
+			<center><button type="submit" class="waves-effect waves-light btn"><i class="material-icons left">add</i>Cadastrar</button></center>
+			<br><br>	
+		</form>
+	</div>
+	<!--JavaScript at end of body for optimized loading-->
+	<script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+</body>
+</html>

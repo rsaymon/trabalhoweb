@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.ui.js"></script>
+		<link rel="stylesheet" href="css/style.css">
+		<title>Home - Ziutur Excursões</title>
+        
+	</head>
+	
+	<body>
+		<div class="nav-wrapper">
+   			<nav class="nav-menu">
+   				<ul class="clearfix">
+			        <li><a href="/">Home</a></li>
+			        <li><a href="/pacotes">Pacotes</a></li>
+			        <li><a href="/sobre">Sobre</a></li>
+			        <li><a href="/contato">Contato</a></li>
+                </ul>
+            </nav>
+		</div>
+        <br><br><br>
+		<div class="container paineis">
+		<section th:each="produto : ${produtos}" class="painel novidades">
+				
+				<h2><span th:text="${produto.nome}"></span></h2>
+				<p><h1><span th:text="${produto.descricao}"></span></p>
+				Custando apenas: $<span th:text="${produto.valor}"><h1></h1></span>
+
+		</section>
+		</div>
+		<br><br><br>	
+
+
+       		<footer>
+				<div id="rodape">
+					<p class="rodape">Todos os direitos reservados a Ziutur Excursões, Fundada em 03/1988 - Tel. (88) 3214.1524 - Desenvolvido por RS - 2018</p>
+				</div>
+		</footer>
+	</body>
+	<script>
+  $( function() {
+    $( "#tabs" ).tabs();
+  } );
+  </script>
+</html>
